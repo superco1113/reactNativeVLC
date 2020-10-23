@@ -47,48 +47,11 @@ export default class App extends Component {
             <View style={styles.body}>
               <VLCPlayer
                 ref={(ref) => (this.vlcPlayer1 = ref)}
-                style={{ width: '100%', height: 200 }}
                 autoplay={true}
-                videoAspectRatio="16:9"
+                //videoAspectRatio="16:9"
                 source={{
-                  //uri: 'https://w05-tw.eupfin.com/live/c7597799-febc-4b86-9f22-e75bc0846e581/playlist.m3u8'
-                  //uri: 'rtmp://61.222.206.22:1935/live/c7597799-febc-4b86-9f22-e75bc0846e581'
-                  //uri: 'https://w05-tw.eupfin.com/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d91/playlist.m3u8'
-                  //uri: "rtmp://61.222.206.22:1935/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d91"
-                  uri: 'rtmp://61.222.206.22:1935/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb1'
-                  //uri: 'https://w05-tw.eupfin.com/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb1/playlist.m3u8'
-                }}
-                onLoadStart={() => {
-                  console.log('player1 load start')
-                }}
-                onError={(e) => {
-                  console.log('error')
-                  console.log(e)
-                }}
-                onBuffering={(e) => {
-                  console.log('buffering')
-                  console.log(e)
-                }}
-                onOpen={(e) => {
-                  console.log('open')
-                  console.log(e)
-                }}
-              />
-
-            </View>
-            <View style={styles.body}>
-              <VLCPlayer
-                ref={(ref) => (this.vlcPlayer1 = ref)}
-                style={{ width: '100%', height: 200 }}
-                autoplay={true}
-                videoAspectRatio="16:9"
-                source={{
-                  //uri: 'https://w05-tw.eupfin.com/live/c7597799-febc-4b86-9f22-e75bc0846e582/playlist.m3u8'
-                  //uri: 'rtmp://61.222.206.22:1935/live/c7597799-febc-4b86-9f22-e75bc0846e582'
-                  //uri: 'https://w05-tw.eupfin.com/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d92/playlist.m3u8'
-                  // uri: "rtmp://61.222.206.22:1935/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d92"
-                  uri: 'rtmp://61.222.206.22:1935/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb2'
-                  //uri: 'https://w05-tw.eupfin.com/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb2/playlist.m3u8'
+                  uri: 'rtsp://60.251.59.76:1935/live/e65a13e0-a020-4b63-bf52-495415562a1611'
+                  //uri: 'https://w04-tw.eupfin.com/live/e65a13e0-a020-4b63-bf52-495415562a1611/playlist.m3u8'
                 }}
                 onLoadStart={() => {
                   console.log('player1 load start')
@@ -109,17 +72,13 @@ export default class App extends Component {
             </View>
             <View style={styles.body}>
               <VLCPlayer
-                ref={(ref) => (this.vlcPlayer1 = ref)}
+                ref={(ref) => (this.vlcPlayer2 = ref)}
                 style={{ width: '100%', height: 200 }}
                 autoplay={true}
                 videoAspectRatio="16:9"
                 source={{
-                  //uri: 'https://w05-tw.eupfin.com/live/c7597799-febc-4b86-9f22-e75bc0846e583/playlist.m3u8'
-                  //uri: 'rtmp://61.222.206.22:1935/live/c7597799-febc-4b86-9f22-e75bc0846e583'
-                  //uri: 'https://w05-tw.eupfin.com/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d93/playlist.m3u8'
-                  //uri: "rtmp://61.222.206.22:1935/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d93"
-                  uri: 'rtmp://61.222.206.22:1935/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb3'
-                  //uri: 'https://w05-tw.eupfin.com/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb3/playlist.m3u8'
+                  uri: 'rtsp://60.251.59.76:1935/live/08c92cc1-05cd-4754-a176-70090be3aefd1'
+                  //uri: 'https://w04-tw.eupfin.com/live/08c92cc1-05cd-4754-a176-70090be3aefd1/playlist.m3u8'
                 }}
                 onLoadStart={() => {
                   console.log('player1 load start')
@@ -140,17 +99,13 @@ export default class App extends Component {
             </View>
             <View style={styles.body}>
               <VLCPlayer
-                ref={(ref) => (this.vlcPlayer1 = ref)}
+                ref={(ref) => (this.vlcPlayer3 = ref)}
                 style={{ width: '100%', height: 200 }}
                 autoplay={true}
                 videoAspectRatio="16:9"
                 source={{
-                  //uri: 'https://w05-tw.eupfin.com/live/c7597799-febc-4b86-9f22-e75bc0846e584/playlist.m3u8'
-                  //uri: 'rtmp://61.222.206.22:1935/live/c7597799-febc-4b86-9f22-e75bc0846e584'
-                  //uri: 'https://w05-tw.eupfin.com/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d94/playlist.m3u8'
-                  //uri: "rtmp://61.222.206.22:1935/live/2dda6c27-1f78-48d3-b39f-a35ff451e1d94"
-                  uri: 'rtmp://61.222.206.22:1935/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb4'
-                  //uri: 'https://w05-tw.eupfin.com/live/eddffc46-34a7-4d5a-b4df-85cc5c61bbfb4/playlist.m3u8'
+                  uri: 'rtsp://60.251.59.76:1935/live/08c92cc1-05cd-4754-a176-70090be3aefd2'
+                  //uri: 'https://w04-tw.eupfin.com/live/08c92cc1-05cd-4754-a176-70090be3aefd2/playlist.m3u8'
                 }}
                 onLoadStart={() => {
                   console.log('player1 load start')
@@ -169,9 +124,60 @@ export default class App extends Component {
                 }}
               />
             </View>
-            
-            
-
+            <View style={styles.body}>
+              <VLCPlayer
+                ref={(ref) => (this.vlcPlayer4 = ref)}
+                style={{ width: '100%', height: 200 }}
+                autoplay={true}
+                videoAspectRatio="16:9"
+                source={{
+                  uri: 'rtsp://60.251.59.76:1935/live/08c92cc1-05cd-4754-a176-70090be3aefd3'
+                  //uri: 'https://w04-tw.eupfin.com/live/08c92cc1-05cd-4754-a176-70090be3aefd3/playlist.m3u8'
+                }}
+                onLoadStart={() => {
+                  console.log('player1 load start')
+                }}
+                onError={(e) => {
+                  console.log('error')
+                  console.log(e)
+                }}
+                onBuffering={(e) => {
+                  console.log('buffering')
+                  console.log(e)
+                }}
+                onOpen={(e) => {
+                  console.log('open')
+                  console.log(e)
+                }}
+              />
+            </View>
+            <View style={styles.body}>
+              <VLCPlayer
+                ref={(ref) => (this.vlcPlayer5 = ref)}
+                style={{ width: '100%', height: 200 }}
+                autoplay={true}
+                videoAspectRatio="16:9"
+                source={{
+                  uri: 'rtsp://60.251.59.76:1935/live/08c92cc1-05cd-4754-a176-70090be3aefd4'
+                  //uri: 'https://w04-tw.eupfin.com/live/08c92cc1-05cd-4754-a176-70090be3aefd4/playlist.m3u8'
+                }}
+                onLoadStart={() => {
+                  console.log('player1 load start')
+                }}
+                onError={(e) => {
+                  console.log('error')
+                  console.log(e)
+                }}
+                onBuffering={(e) => {
+                  console.log('buffering')
+                  console.log(e)
+                }}
+                onOpen={(e) => {
+                  console.log('open')
+                  console.log(e)
+                }}
+              />
+            </View>
 
           </ScrollView>
         </SafeAreaView>
